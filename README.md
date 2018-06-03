@@ -32,8 +32,8 @@ By default, Assertee is required for `TODO` and `FIXME`.
 
 ```json
 {
-  "rules": {
-    "ass-wipe-yourself": true
+  "extends": {
+    "@tsuyoshiwada/ass-wipe-yourself"
   }
 }
 ```
@@ -44,6 +44,9 @@ For example, to add `NOTE`, pass the array as follows.
 
 ```json
 {
+  "extends": {
+    "@tsuyoshiwada/ass-wipe-yourself"
+  },
   "rules": {
     "ass-wipe-yourself": [true, ["TODO", "FIXME", "NOTE"]]
   }

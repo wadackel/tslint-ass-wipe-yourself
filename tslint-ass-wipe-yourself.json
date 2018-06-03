@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": ["./rules"],
+  "rules": {
+    "ass-wipe-yourself": [true, ["TODO", "FIXME"]]
+  }
+}
