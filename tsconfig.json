@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false,
+    "declaration": false,
+    "lib": ["es2017"],
+    "module": "commonjs",
+    "outDir": "rules",
+    "removeComments": true,
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "target": "es2015"
+  },
+  "include": ["src"]
+}

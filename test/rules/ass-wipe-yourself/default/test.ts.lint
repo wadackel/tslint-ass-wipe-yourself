@@ -1,0 +1,37 @@
+/// correct comment
+class Clazz { // this comment is correct
+  /**
+   * Block comment
+   */
+  public static foo(): void {
+    // FIXME this is incorrect comment.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [assignee]
+
+    // TODO this is incorrect comment.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [assignee]
+
+    /// FIXME this is incorrect comment.
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [assignee]
+
+    /// TODO this is incorrect comment.
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [assignee]
+
+    /// FIXME: this is incorrect comment.
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [format]
+
+    /// TODO: this is incorrect comment.
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [format]
+  }
+}
+
+//#region test
+//#endregion
+
+// TODO @tsuyoshiwada Hoge Fuga Fuge
+// ^ correct comment
+
+`${location.protocol}//${location.hostname}`;
+
+
+[assignee]: Annotation comment requires the assignee name
+[format]: Semicolons can not be used

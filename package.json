@@ -1,0 +1,53 @@
+{
+  "name": "@tsuyoshiwada/tslint-ass-wipe-yourself",
+  "version": "0.0.1",
+  "description": "A TSLint rule. annotation comment are requires assignee name.",
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "tsc",
+    "test": "yarn test:lint && yarn test:rules",
+    "test:lint": "tslint './src/**/*.ts'",
+    "test:rules": "tslint --test 'test/rules/**/*'",
+    "clear": "rm -rf rules",
+    "release": "bash ./scripts/release.sh",
+    "prebuild": "yarn clear",
+    "pretest": "yarn build",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyoshiwada/tslint-ass-wipe-yourself.git"
+  },
+  "keywords": [
+    "tslint",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/tsuyoshiwada/tslint-ass-wipe-yourself/issues"
+  },
+  "homepage": "https://github.com/tsuyoshiwada/tslint-ass-wipe-yourself#readme",
+  "author": "tsuyoshiwada",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.1.4",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.3",
+    "prettier": "^1.13.4",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "tsutils": "^2.27.1"
+  },
+  "peerDependencies": {
+    "tslint": "^5.1.0",
+    "typescript": "^2.5.0"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
