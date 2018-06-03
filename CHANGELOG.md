@@ -7,6 +7,14 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased]
 
+<a name="0.0.2"></a>
+
+## [0.0.2] - 2018-06-03
+
+### Bug Fixes
+
+- Fix missing of `main` field in `package.json`
+
 <a name="0.0.1"></a>
 
 ## 0.0.1 - 2018-06-03
@@ -15,4 +23,5 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 - Fisrt implements
 
-[unreleased]: https://github.com/tsuyoshiwada/tslint-ass-wipe-yourself/compare/0.0.1...HEAD
+[unreleased]: https://github.com/tsuyoshiwada/tslint-ass-wipe-yourself/compare/0.0.2...HEAD
+[0.0.2]: https://github.com/tsuyoshiwada/tslint-ass-wipe-yourself/compare/0.0.1...0.0.2
