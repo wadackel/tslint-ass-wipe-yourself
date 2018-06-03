@@ -1,6 +1,6 @@
 {
-  "rulesDirectory": ["./rules"],
+  "rulesDirectory": "./rules",
   "rules": {
-    "ass-wipe-yourself": [true, ["TODO", "FIXME"]]
+    "ass-wipe-yourself": false
   }
 }
